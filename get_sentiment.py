@@ -30,6 +30,6 @@ def get_sentiment(text):
         mag = response['documentSentiment']['magnitude']
         score = response['documentSentiment']['score']
         is_good_news = mag > 0 and score > 0
-        print("Magnitude:", mag, "Score:", score)
-        
-    return is_good_news
+        # print("Magnitude:", mag, "Score:", score)
+
+    return score
